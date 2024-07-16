@@ -9,7 +9,7 @@ const formattedDate = currentDate.toLocaleString(undefined, options);
 function getCurrent(e){ // creating the button's function
     const name = prompt("what is your name?"); //prompting user for an input
     const newHeading = document.createElement("h1"); //creates a new heading
-    newHeading.textContent = "Hi! " + name + " the time is " + formattedDate; 
+    newHeading.textContent = "Hi! " + name + " the time is " + formattedDate;
     newHeading.classList.add("new-Heading"); //creates a "class name" for the newly created heading to make it stylable in CSS.
     
     document.body.appendChild(newHeading)//appends the newly created heading into the html body

@@ -1,0 +1,534 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+li, a, button{
+    font-family: "Montserrat", sans-serif;
+    font-weight:  500;
+    font-size:  16px;
+    color: #edf0f1;
+    text-decoration: none;
+    
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10%;
+    background-color: #24252A;
+
+
+}
+
+.logo{
+    cursor: pointer;
+    width: 80px;
+    font-family: "Montserrat", sans-serif;
+    font-weight:  900;
+    font-size:  30px;
+    color: whitesmoke;
+    letter-spacing: 2px;
+}
+
+.nav__links{
+    list-style: none;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover{
+    color: #0088a9;
+}
+
+button{
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover{
+    background-color: rgba(0, 136, 169, 0.8);
+}
+
+
+
+.hero__section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: whitesmoke;
+    height: 100vh;
+    align-items: center;
+}
+
+.hero{
+    display: flex;
+    justify-content: center;
+    width: 40vh;
+    text-align: center;
+    background-color: whitesmoke;
+    
+}
+.hero h1{
+    font-family: "Montserrat", sans-serif;
+    font-weight:  500;
+    font-size:  30px;
+    color: #24252A;
+}
+.hero h1 span{
+    font-family: "Montserrat", sans-serif;
+    font-weight:  900;
+    font-size:  60px;
+    color: #24252A;
+}
+
+.first__intro{
+    display: flex;
+    justify-content: center;
+    background-color: whitesmoke;
+    height: 100vh;
+    align-items: center;
+}
+
+
+
+.first__intro.checked {
+    background: linear-gradient(to top, rgb(244, 195, 195), whitesmoke);
+}
+.intro{
+    display: flex;
+    justify-content: center;
+    width: 40vh;
+    text-align: center;
+    background-color: transparent;
+    line-height: 60px;
+    flex-direction: column;
+    align-items: center;
+    transition: background-color 0.5s ease;
+    
+}
+
+.intro h1{
+    font-family: "Montserrat", sans-serif;
+    font-weight:  500;
+    font-size:  30px;
+    color: #24252A;
+    margin-bottom: 30px;
+    
+}
+
+.intro h1 span{
+    font-family: "Montserrat", sans-serif;
+    font-weight:  900;
+    font-size:  60px;
+    color: #24252A;
+    
+}
+
+.intro input{
+    height: 10vh;
+    margin: 8px 0px;
+    font-family: "Montserrat", sans-serif;
+    font-weight:  500;
+    color: #24252A;
+    font-size: 4vh;
+    width: 40vh;
+    text-align: center;
+    border-radius: 10px;
+
+    
+    
+}
+
+.intro button{
+    width: 20vh;
+    align-items: center;
+    margin-top: 15px;
+}
+#error{
+    font-family: "Montserrat", sans-serif;
+    font-weight:  300;
+    font-size:  20px;
+    color: #24252A;
+}
+
+.TODO__List_Section{
+        display: flex;
+        justify-content: center;
+        background-color:#24252A;
+        height: 100vh;
+        flex-direction: row;
+        align-items: center;
+}
+
+.TODO_Form_List{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 70vw;
+    align-items: center;
+}
+.TODO__List{
+    display: flex;
+    justify-content: left;
+    width: 60vh;
+    text-align: left;
+    background-color:#24252A;
+    line-height: 45px;
+    /* align-items: baseline; */
+    margin-left: 30px;
+
+}
+
+.TODO__List h1{
+    font-family: "Montserrat", sans-serif;
+    font-weight:  500;
+    font-size:  3vw;
+    color: whitesmoke;
+    
+}
+
+.TODO__List h1 span{
+    font-family: "Montserrat", sans-serif;
+    font-weight:  900;
+    font-size:  4vw;
+    color: whitesmoke;
+    line-height: 6vw;
+}
+
+.TODO__Form{
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    height: 80vh;
+    width: 35vw;
+    border-radius: 30px;
+    border-top-right-radius: 0;
+    align-items: center;
+
+}
+
+.TODO_FormContent{
+    display: flex;
+    flex-direction: column;
+    /* width: 30vw; */
+
+}
+
+.form__title h1{
+    font-family: "Montserrat", sans-serif;
+    font-weight:  900;
+    font-size:  40px;
+    color: #24252A;
+    line-height: 6vw;
+    text-align: center;
+
+}
+.form__title h1 span{
+    font-family: "Montserrat", sans-serif;
+    font-weight:  400;
+    font-size:  40px;
+    color: #24252A;
+    line-height: 6vw;
+    text-align: center;
+}
+.form__title h1 span{
+    text-decoration: underline;
+}
+
+
+
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+.row input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+}
+
+.row button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #24252A;
+    color: whitesmoke;
+    cursor: pointer;
+    border-radius: 40px;
+
+
+}
+
+
+.TODO_FormContent ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px; 
+    user-select: none;
+    cursor: pointer;
+    color: #24252A;
+    position: relative;
+    margin-left: 40px;
+    
+
+}
+.TODO_FormContent ul li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url('assets/unchecked.png');
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: -40px; 
+}
+
+.TODO_FormContent ul li.checked{
+    color: rgba(17, 17, 17, 0.578);
+    text-decoration: line-through;
+}
+
+.TODO_FormContent ul li.checked::before{
+    background-image: url(assets/checked.png);
+}
+
+.TODO_FormContent ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #24252A;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.TODO_FormContent ul li span:hover{
+    background-color: rgb(255, 139, 139);
+}
+
+
+
+/* MEDIA QUIRIES FOR NAVBAR */
+
+@media only screen and (max-width: 960px) {
+    li, a, button{
+        font-family: "Montserrat", sans-serif;
+        font-weight:  500;
+        font-size:  12px;
+        color: #edf0f1;
+        text-decoration: none;
+        
+    }
+
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20%;
+        background-color: #24252A;
+    }
+
+    .logo{
+        cursor: pointer;
+        width: auto;
+        font-family: "Montserrat", sans-serif;
+        font-weight:  900;
+        font-size:  15px;
+        color: whitesmoke;
+        letter-spacing: 2px;
+    }
+
+    .hero{
+        display: flex;
+        justify-content: center;
+        width: 40vh;
+        text-align: center;
+        background-color: whitesmoke;
+        
+    }
+
+    .hero h1{
+        font-family: "Montserrat", sans-serif;
+        font-weight:  500;
+        font-size:  40px;
+        color: #24252A;
+    }
+
+    .hero h1 span{
+        font-family: "Montserrat", sans-serif;
+        font-weight:  900;
+        font-size:  90px;
+        color: #24252A;
+    }
+
+    .intro{
+        display: flex;
+        justify-content: center;
+        width: 60vh;
+        text-align: center;
+        background-color: transparent;
+        line-height: 100px;
+        flex-direction: column;
+        align-items: center;
+        transition: background-color 0.5s ease;
+        
+    }
+
+    .intro h1 span{
+        font-family: "Montserrat", sans-serif;
+        font-weight:  900;
+        font-size:  8vw;
+        color: #24252A;
+    }
+
+    .intro h1{
+        font-family: "Montserrat", sans-serif;
+        font-weight:  500;
+        font-size:  8vw;
+        color: #24252A;
+        margin-bottom: 30px;
+        
+    }
+
+    .intro button{
+        width: 20vh;
+        height: 7vw;
+        align-items: center;
+        margin-top: 30px;
+        font-size:3vw;
+    }
+
+    .TODO_Form_List{
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse;
+        width: 70vw;
+        align-items: center;
+    }
+
+    .TODO__Form{
+        display: flex;
+        flex-direction: column;
+        background-color: whitesmoke;
+        height: 60vh;
+        width: 60vw;
+        border-radius: 30px;
+        
+        align-items: center;
+    
+    }
+
+    .form__title h1{
+        font-family: "Montserrat", sans-serif;
+        font-weight:  900;
+        font-size:  70px;
+        color: #24252A;
+        line-height: 6vw;
+        text-align: center;
+        padding-top: 60px;
+    
+    }
+    .form__title h1 span{
+        font-family: "Montserrat", sans-serif;
+        font-weight:  400;
+        font-size:  70px;
+        color: #24252A;
+        line-height: 6vw;
+        text-align: center;
+    }
+
+    .row{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #edeef0;
+        border-radius: 30px;
+        padding-left: 20px;
+        margin-bottom: 25px;
+        margin-top: 45px;
+    }
+
+    .row input{
+        flex: 1;
+        border: none;
+        outline: none;
+        background: transparent;
+        padding: 10px;
+        height: 60px;
+        font-size: 20px;
+    }
+    
+    .row button{
+        border: none;
+        outline: none;
+        padding: 16px 50px;
+        background: #24252A;
+        color: whitesmoke;
+        cursor: pointer;
+        border-radius: 40px;
+        height: 60px;
+        font-size: 20px;
+    
+    }
+    .TODO__List{
+        display: flex;
+        justify-content: center;
+        width: 70vh;
+        text-align: center;
+        background-color:#24252A;
+        line-height: 45px;
+        /* align-items: baseline; */
+        margin-left: 30px;
+        margin-bottom: 20px;
+    
+    }
+
+    .TODO__List h1{
+        font-family: "Montserrat", sans-serif;
+        font-weight:  500;
+        font-size:  60px;
+        color: whitesmoke;
+        
+    }
+    .TODO__List h1 span{
+        font-family: "Montserrat", sans-serif;
+        font-weight:  900;
+        font-size:  60px;
+        color: whitesmoke;
+        line-height: 120px;
+    }
+
+    
+
+
+}

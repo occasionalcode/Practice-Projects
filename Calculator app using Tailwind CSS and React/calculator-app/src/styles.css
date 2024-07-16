@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@300&family=Gugi&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.twoButtonBG {
+    @apply flex w-14 h-9 bg-twoButtonsBorder rounded-md
+    justify-center items-center  shadow-black shadow-sm
+}
+
+.twoButton{
+    @apply bg-twoButtonsBg w-full h-6 mx-2 mb-1 flex justify-center rounded-sm
+}

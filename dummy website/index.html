@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>testing</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <h1 class="logo">jsRANDOM_G</h1>
+        <nav>
+            <ul class="nav__links">
+                <li><a href="#intro">Introduction</a></li>
+                <li><a href="#TODO__Section">To-Do</a></li>
+                <li><a href="#">Coming soon</a></li>
+                
+            </ul>
+        </nav>
+        <a class="cta" href="#"><button>LESGO</button></a>
+    </header>
+
+    <section class="hero__section">
+        <div class="hero">
+            <h1>Welcome to the world of <span>RANDOMNESS</span></h1>
+        </div>
+    </section>
+
+    <section class="first__intro" id="first_intro">
+        <div class="intro" id="intro">
+            <h1>Hello! what is your <br><span>NAME?</span></h1>
+            <div id="error"></div>
+            <form id="form" action="/" method="GET">
+                <input type="text" id="user__name" name="name" placeholder="Enter your name">
+                <button type="submit" id="nameSubmit">Submit</button>
+            </form>
+            
+        </div>
+        
+    </section>
+    <Section class="TODO__List_Section" id="TODO__Section">
+        <div class="TODO_Form_List">
+            
+                <div class="TODO__Form">
+                    <div class="TODO_FormContent">
+                        <div class="form__title">
+                            <H1>To-Do <span>List!</span></H1>
+                        </div>
+                        <!-- <div class="TO-DO__inputDiv">
+                            <form action="/" method="GET" id="TO-DO__inputForm">
+                                <input type="text" id="To-Do__Input" name="name" >
+                                <button type="submit">Submit</button>
+                            </form>
+                        </div> -->
+
+                        <div class="row">
+                            <input type="text" name="" id="ToDo__inputBox" placeholder="Add task">
+                            <button onclick="addTask()">Add</button>
+                        </div>
+                        <ul id="list-container">
+                            <!-- <li class="checked">Task 1</li>
+                            <li>Task 2</li>
+                            <li>Task 1</li> -->
+                        </ul>
+                        
+
+                    </div>
+                </div>
+            
+            <div class="TODO__List">
+                <h1><span id="display__name">Hey Stranger!</span><br>set your<br> <span>TO-DO</span> list</h1>
+            </div>
+        </div>
+       
+    </Section>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
